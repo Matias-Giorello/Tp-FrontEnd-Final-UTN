@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: #121215; /* el color de fondo */
-  color: #f3f3f3; /* Texto main*/
+  background-color: #121215; 
+  color: #f3f3f3; 
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   min-height: 100vh;
   display: flex;
@@ -17,4 +17,31 @@ body {
   width: 100%;
   max-width: 900px; 
   padding: 2rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px;
+  background-color: #21212b; 
+  border: 1px solid #333340;
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: #f3f3f3;
+  font-size: 1.1rem;
+  resize: none; 
+  font-family: inherit;
+  margin-bottom: 1rem;
+}
+
+textarea:focus {
+  outline: 2px solid #d1b9ff;
+  border-color: transparent;
 }
