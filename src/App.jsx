@@ -3,7 +3,7 @@ import { Header } from "./components/Header"
 import { WriteArea } from "./components/WriteArea"
 import { Controls } from "./components/Controls"
 import { Stats } from "./components/Stats"
-import { LetterAnalysis } from "./components/LetterDensity"
+import { LetterDensity } from "./components/LetterDensity"
 
 const App = () => {
   const [text, setText] = useState("Esto es un texto de prueba, puedes modificarlo a tu gusto.")
@@ -84,7 +84,7 @@ const App = () => {
         sentences={sentences}
       />
 
-      <LetterAnalysis sortLetters={sortLetters} />
+      <LetterDensity sortLetters={sortLetters} />
     </main>
   )
 }

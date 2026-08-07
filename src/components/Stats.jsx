@@ -1,10 +1,20 @@
-export const Stats = ({ readingTime, characters, words, sentences }) => {
+export const Stats = ({ characters, words, sentences }) => {
   return (
-    <>
-      <p>Tiempo aprox. de Lectura: ~{readingTime} min</p>
-      <p>Cantidad de Caracteres: {characters}</p>
-      <p>Cantidad de Palabras: {words}</p>
-      <p>Cantidad de Oraciones: {sentences}</p>
-    </>
+    <div className="stats-container">
+      <div className="stat-card card-purple">
+        <span className="stat-number">{characters < 10 ? `0${characters}` : characters}</span>
+        <span className="stat-label">Total Characters</span>
+      </div>
+
+      <div className="stat-card card-orange">
+        <span className="stat-number">{words < 10 ? `0${words}` : words}</span>
+        <span className="stat-label">Word Count</span>
+      </div>
+
+      <div className="stat-card card-red">
+        <span className="stat-number">{sentences < 10 ? `0${sentences}` : sentences}</span>
+        <span className="stat-label">Sentence Count</span>
+      </div>
+    </div>
   )
 }

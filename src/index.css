@@ -45,3 +45,117 @@ textarea:focus {
   outline: 2px solid #d1b9ff;
   border-color: transparent;
 }
+
+/* ---------------- TARJETAS (STATS) ---------------- */
+.stats-container {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2.5rem 0; /* Un poco más de espacio arriba y abajo */
+}
+
+.stat-card {
+  flex: 1; /* Esto hace que las 3 ocupen el mismo ancho */
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: #121215; /* Letra oscura para que resalte sobre los colores */
+  background-repeat: no-repeat;
+  background-position: right center; /* Tira tu fotocard a la derecha */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Para que la imagen no se salga de los bordes curvos */
+}
+
+.stat-number {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  letter-spacing: -3px; /* Junta un poquito más los números */
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Tus imágenes guardadas en src/assets/ */
+.card-purple {
+  background-color: #d1b9ff;
+  background-image: url('./assets/backgroundCard1.png');
+}
+
+.card-orange {
+  background-color: #ffb11f;
+  background-image: url('./assets/backgroundCard2.png');
+}
+
+.card-red {
+  background-color: #ff7954;
+  background-image: url('./assets/backgroundCard3.png');
+}
+
+/* ---------------- LETTER DENSITY ---------------- */
+.letter-analysis-container {
+  margin-top: 2rem;
+}
+
+/* Sobreescribimos el h2 global para que este sea más chico y a la izquierda */
+.letter-analysis-container h2 {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.letter-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.letter-char {
+  width: 20px;
+  font-weight: 500;
+}
+
+/* Estilos para la barra de progreso */
+meter {
+  flex: 1; /* Hace que la barra ocupe todo el espacio disponible en el medio */
+  height: 12px;
+  border-radius: 10px;
+  background-color: #21212b;
+}
+
+/* Hack específico para darle color a la barra en navegadores basados en WebKit (Chrome, Edge, Safari) */
+meter::-webkit-meter-bar {
+  background: #21212b;
+  border: none;
+  border-radius: 10px;
+}
+meter::-webkit-meter-optimum-value {
+  background: #d1b9ff; /* El color violeta de la barra */
+  border-radius: 10px;
+}
+
+.letter-stats {
+  width: 100px;
+  text-align: right;
+  color: #a0a0a0;
+  font-size: 0.9rem;
+}
+
+/* Botón de ver más / ver menos */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #f3f3f3;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.toggle-btn:hover {
+  text-decoration: underline;
+}
