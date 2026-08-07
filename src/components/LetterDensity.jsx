@@ -20,7 +20,7 @@ export const LetterDensity = ({ sortLetters }) => {
       
       {sortLetters.length > 5 && (
         <button className="toggle-btn" onClick={() => setShowAll(!showAll)}>
-          {showAll ? "See less ▲" : "See more ▼"}
+          {showAll ? "Ver mas ▲" : "Ver menos ▼"}
         </button>
       )}
     </section>

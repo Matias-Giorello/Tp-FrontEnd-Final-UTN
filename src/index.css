@@ -46,24 +46,23 @@ textarea:focus {
   border-color: transparent;
 }
 
-/* ---------------- TARJETAS (STATS) ---------------- */
 .stats-container {
   display: flex;
   gap: 1.5rem;
-  margin: 2.5rem 0; /* Un poco más de espacio arriba y abajo */
+  margin: 2.5rem 0; 
 }
 
 .stat-card {
-  flex: 1; /* Esto hace que las 3 ocupen el mismo ancho */
+  flex: 1; 
   padding: 1.5rem;
   border-radius: 12px;
-  color: #121215; /* Letra oscura para que resalte sobre los colores */
+  color: #121215; 
   background-repeat: no-repeat;
-  background-position: right center; /* Tira tu fotocard a la derecha */
+  background-position: right center;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* Para que la imagen no se salga de los bordes curvos */
+  overflow: hidden; 
 }
 
 .stat-number {
@@ -71,7 +70,7 @@ textarea:focus {
   font-weight: 800;
   line-height: 1;
   margin-bottom: 0.5rem;
-  letter-spacing: -3px; /* Junta un poquito más los números */
+  letter-spacing: -3px; 
 }
 
 .stat-label {
@@ -79,7 +78,7 @@ textarea:focus {
   font-weight: 500;
 }
 
-/* Tus imágenes guardadas en src/assets/ */
+
 .card-purple {
   background-color: #d1b9ff;
   background-image: url('./assets/backgroundCard1.png');
@@ -95,12 +94,12 @@ textarea:focus {
   background-image: url('./assets/backgroundCard3.png');
 }
 
-/* ---------------- LETTER DENSITY ---------------- */
+
 .letter-analysis-container {
   margin-top: 2rem;
 }
 
-/* Sobreescribimos el h2 global para que este sea más chico y a la izquierda */
+
 .letter-analysis-container h2 {
   text-align: left;
   font-size: 1.5rem;
@@ -119,22 +118,22 @@ textarea:focus {
   font-weight: 500;
 }
 
-/* Estilos para la barra de progreso */
+
 meter {
-  flex: 1; /* Hace que la barra ocupe todo el espacio disponible en el medio */
+  flex: 1; 
   height: 12px;
   border-radius: 10px;
   background-color: #21212b;
 }
 
-/* Hack específico para darle color a la barra en navegadores basados en WebKit (Chrome, Edge, Safari) */
+
 meter::-webkit-meter-bar {
   background: #21212b;
   border: none;
   border-radius: 10px;
 }
 meter::-webkit-meter-optimum-value {
-  background: #d1b9ff; /* El color violeta de la barra */
+  background: #d1b9ff; 
   border-radius: 10px;
 }
 
@@ -145,7 +144,7 @@ meter::-webkit-meter-optimum-value {
   font-size: 0.9rem;
 }
 
-/* Botón de ver más / ver menos */
+
 .toggle-btn {
   background: none;
   border: none;
